@@ -6,7 +6,7 @@ This project aims to classify animals in motion detected videos captured in Sing
 
 ## Methodology
 
-To achieve accurate classification, we are exploring the use of YOLOv8 to fine tune the model. This approach involves training the model on a supervised dataset of common Singaporean animals. Then, by fine tuning the model with frames from the real videos, we can identify real animals in the videos. The use of YOLOv8 allows us to achieve high accuracy and fast processing times.
+To achieve accurate classification, we are exploring the use of YOLOv7 to fine tune the model. This approach involves training the model on a supervised dataset of common Singaporean animals. Then, by fine tuning the model with frames from the real videos, we can identify real animals in the videos. The use of YOLOv7 allows us to achieve high accuracy and fast processing times.
 
 ## Data Augmentation
 
@@ -14,4 +14,4 @@ To further enhance the accuracy of the model, we plan to create "fake" night vis
 
 ## Conclusion
 
-Overall, this project aims to develop a robust animal classification model that can accurately identify animals in motion detected videos captured in Singapore. Through the use of YOLOv8 and data augmentation techniques, we aim to achieve high accuracy and fast processing times.
+Overall, this project aims to develop a robust animal classification model that can accurately identify animals in motion detected videos captured in Singapore. Through the use of YOLOv7 and data augmentation techniques, we aim to achieve high accuracy and fast processing times.
