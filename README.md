@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to classify animals in motion detected videos captured in Singapore. The methodology used in this project involves exploring the use of YOLOv8 to fine tune the classification model. In addition, data augmentation techniques will be employed to enhance the model's accuracy.
+This project aims to classify animals in motion detected videos captured in Singapore. The methodology used in this project involves exploring the use of YOLOv7 to fine tune the classification model. In addition, data augmentation techniques will be employed to enhance the model's accuracy.
 
 ## Methodology
 
