@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    <p>predict results?</p>
+    <form method="POST" action="/predict">
+        <!-- <input type="text" name="text_input" placeholder="Enter text"> -->
+        <select name="file_selection">
+            <option value="" disabled selected>Select a file</option>
+            {% for filename in file_list %}
+            <option value="{{ filename }}">{{ filename }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

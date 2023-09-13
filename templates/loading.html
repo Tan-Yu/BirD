@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <!-- <style>
+        #progress-container {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #progress-bar {
+            width: 0;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+    </style> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+{% endblock %}
+    
+
+{% block main %}
+    <div class="main-content">
+        <h1 class="loading-h1">Loading...</h1>
+        <div id="progress-container">
+            <div id="progress-bar">0%</div>
+        </div>
+        
+        <script>
+            // Function to update the progress bar
+            function updateProgressBar(progress) {
+                var progressBar = document.getElementById("progress-bar");
+                progressBar.style.width = progress + "%";
+                progressBar.innerHTML = progress + "%";
+            }
+
+            // Poll the server for progress
+            function checkProgress() {
+                $.ajax({
+                    url: "/check_progress",
+                    type: "GET",
+                    success: function(data) {
+                        // Update progress bar based on data
+                        var progress = parseFloat(data.progress);
+                        updateProgressBar(progress);
+
+                        if (progress >= 100) {
+                            // Redirect to result page when processing is complete
+                            window.location.href = "/result";
+                        } else {
+                            // Continue checking progress
+                            setTimeout(checkProgress, 1000); // Check every 1 second
+                        }
+                    }
+                });
+            }
+
+            // Start checking progress when the page loads
+            checkProgress();
+        </script>
+    </div>
+{% endblock %}

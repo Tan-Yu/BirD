@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+{% block main %}
+
+    <div class = 'main-content'>
+    
+    <h1>Successfully predicted!</h1>
+    <video class="predicted-video" width="320" height="240" controls>
+        <source src="{{ url_for('uploaded_file', filename=video_filename) }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+{% endblock %}

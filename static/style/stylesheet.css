@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body, html{    
+    background-color: #f9fbfd;    
+    height: 100%;
+    font-family: 'Lato', sans-serif;   
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+
+}
+
+.upload-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.upload-div form {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loading-h1{
+
+}
+
+.predicted-video{
+    /* margin-top:210px; */
+    /* height: 80%;
+    /* border-radius: 20px; */
+    width: 80%;
+
+
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 2px; /* Small padding around the bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    transition: width 0.3s ease; /* Smooth transition animation */
+}
+
+
+/* 
+/* .file{
+    display: flex;
+    flex-direction: column;
+
+} */
+/* input[type="file"] {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  input[type="file"], input[type="submit"]{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+  } */ 
+
+
+

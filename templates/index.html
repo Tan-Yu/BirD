@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+	<div class="main-content">
+		<h1>Upload Video to Predict! (.MP4 Format)</h1>
+		<div class="upload-div">
+			<div class="upload-form">
+				<form action = "/success" method = "post" enctype="multipart/form-data">
+					<input class="file" type="file" id="files" name="file" >
+					<input type = "submit" value="Upload" >
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
