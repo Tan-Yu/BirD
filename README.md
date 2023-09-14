@@ -15,3 +15,6 @@ To further enhance the accuracy of the model, we plan to create "fake" night vis
 ## Conclusion
 
 Overall, this project aims to develop a robust animal classification model that can accurately identify animals in motion detected videos captured in Singapore. Through the use of YOLOv7 and data augmentation techniques, we aim to achieve high accuracy and fast processing times.
+
+
+![](https://github.com/Tan-Yu/BirD/blob/main/README%20Content/My%20Movie.gif)
