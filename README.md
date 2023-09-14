@@ -12,6 +12,31 @@ This project aims to classify animals in motion detected videos captured in Sing
 
 To achieve accurate classification, we are exploring the use of YOLOv7 to fine tune the model. This approach involves training the model on a supervised dataset of common Singaporean animals. Then, by fine tuning the model with frames from the real videos, we can identify real animals in the videos. The use of YOLOv7 allows us to achieve high accuracy and fast processing times.
 
+## Choice of YOLOv7 for Licensing Reasons
+
+### Background
+
+When selecting the computer vision model for our animal classification project, we carefully considered licensing and open-source considerations. While there are several excellent models available for object detection and classification, we decided to use YOLOv7 for the following reasons:
+
+### Licensing Considerations
+
+1. **MIT License:** YOLOv7 is released under the MIT License, which is one of the most permissive open-source licenses available. This license grants us the freedom to use, modify, and distribute the model for both non-commercial and commercial purposes without significant licensing restrictions.
+
+2. **No GPL Dependencies:** YOLOv7's codebase is free from dependencies that use the GNU General Public License (GPL) or other restrictive licenses. This ensures that our entire project remains open and accessible while avoiding any potential licensing conflicts.
+
+3. **Commercial Viability:** Given our project's commercial nature, it was crucial to select a model that aligns with our business goals. YOLOv7's licensing allows us to incorporate it into our commercial product, making it a suitable choice for our needs.
+
+### Flexibility and Performance
+
+Apart from licensing considerations, YOLOv7 offers high performance in object detection and classification tasks. Its architecture is efficient and can handle real-time processing, making it well-suited for our application's requirements.
+
+### Future Compatibility
+
+We anticipate that YOLOv7's permissive licensing and strong community support will ensure its compatibility with future developments in the field of computer vision. This ensures the longevity and sustainability of our project.
+
+By selecting YOLOv7 for our animal classification model, we aim to strike a balance between licensing compliance and robust performance, allowing us to develop a successful commercial project while adhering to open-source principles.
+
+
 ## Data Augmentation
 
 To further enhance the accuracy of the model, we plan to create "fake" night vision videos to train on since the camera has night vision videos. This data augmentation technique will help the model recognize animals in low-light settings, improving its performance.
